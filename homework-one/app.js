@@ -31,8 +31,10 @@ let pizzanum=4;
 let pizzaslices=8
 let totalslices=pizzanum*pizzaslices;
 let caneat=2.5;
+let studentscaneat=32;
 
 document.getElementById('studentscaneat').innerHTML+=totalslices/caneat;
+document.getElementById('profPizza').innerHTML+=totalslices-studentscaneat;
 
 
 //Monty's Mega Bar Problem
