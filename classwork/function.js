@@ -80,6 +80,28 @@ function recTotal (h,w){
 document.getElementById(multiAnswer).innerHTML= "<ul><li>Perimeter:"+ recTotal(rheight,rWidth)[0] "</li><li>Area:" + recTotal(rheight,rWidth)[1]+"</li> </ul>";
 
 //Home1 pizza rounding the number.
-
+//alert window to pop-up
 var myN= 3.4
 document.write(Math.floor(myN));
+
+
+//button try it
+
+function myFunction(){
+    alert("Who goes there?");
+
+}
+//button function with parameteer
+
+
+function wizard(name, job){
+    document.getElementById('future').innerHTML= "Welcome" +name+",the"+job+"!"; 
+
+}
+
+
+function addIteam(){
+    let item = prompt("Add Items:");
+    console.log(item);
+    alert("You have added " +item+"to your list");
+}
