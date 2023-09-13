@@ -69,10 +69,25 @@ const friend = {
 
 console.log(friend.fullName()+"is"+ friend.age+"years old.");
 
+//
 
 
+const car ={
+    year: 2009,
+    make:"BMW",
+    Model:"SUV",
+    auto: false,
+    mpg:20,
+    eff:function(){
+        return(this.mpg>40);
+    }
 
 
+}
+
+document.getElementById('car').innerHTML="I own a  "+ car.year +"" +car.make+" "+car.model +"."+ auto;
+
+document.getElementById('carEff').innerHTML= car.make +" "+car.Model+ "Efficiency:"+ car.eff();
 
 
 
