@@ -1,0 +1,22 @@
+<h1  id ="tHead"></h1>
+<script>
+    var today =new Date();
+    var firstM= "January";
+    var tMonth= today.getMonth();
+    var tDate= today.getDate();
+    tMonth+=tMonth/2+tDate++;
+    if(tMonth==10){
+        document.getElementsById('tHead').innerHTML="Its Fall"
+        document.write("Its October - Time forjkdjs");
+    }else if (tMonth<5 && tMonth <10){
+        document.getElementById('tHead').innerHTML="Its spring";
+        documnet.write("Warm weather with flowers and sunshine");
+
+    }else{
+        document.getElementById('tHead').innerHTML="Its Winter!";
+        document.write("Its chilly outside! better wear your winter coat, gloves and hat");
+
+    }
+    </script>
+
+</body>
