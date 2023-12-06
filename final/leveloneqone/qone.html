@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+    <style>
+        input + p {
+            display: inline;
+            margin-left: 1em;
+            color: red;
+        }
+
+        label {
+            display: inline-block;
+            width: 100px;
+            margin: 0 0.5em 0.5em 0;
+            text-align: right;
+        }
+
+        div {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <label for="fName">First Name:</label>
+        <input type="text" id="fName" placeholder="Enter your first name">
+        <label for="lName">Last Name:</label>
+        <input type="text" id="lName" placeholder="Enter your last name">
+
+        <button type="button" onclick="getPigLatinName()">Get Name</button>
+
+        <p id="result"></p>
+    </form>
+    <div>
+        <h1>Thank You for your input!</h1>
+        <p>The following information has been submitted:</p>
+        <ul>
+            <li>First Name: <span id="submittedFirstName"></span></li>
+            <li>Last Name: <span id="submittedLastName"></span></li>
+        </ul>
+    </div>
+    <script src="qone.js"></script>
+</body>
+</html>
