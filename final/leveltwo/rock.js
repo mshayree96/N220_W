@@ -11,8 +11,8 @@ function game() {
 }
 
 function showChoices(player1, player2) {
-  let player1img = `<img src="${player1.png}" alt="Player1">`;
-  let player2img = `<img src="${player2.png}" alt="Player2">`;
+  let player1img = `<img src="./img/${player1}.png" alt="Player1">`;
+  let player2img = `<img src="./img/${player2}.png" alt="Player2">`;
 
   document.getElementById('result').innerHTML = `${player1img} vs ${player2img}`;
 }
@@ -43,6 +43,6 @@ function displayResult(winner) {
   const newRow = gameResultTable.insertRow(-1);
   const cell1 = newRow.insertCell(0);
   const cell2 = newRow.insertCell(1);
-  cell1.textContent = innerscore; // Change gameCounter to innerscore
+  cell1.textContent = innerscore;
   cell2.textContent = winner;
 }

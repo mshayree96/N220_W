@@ -1,0 +1,30 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div>
+      <div style="display: flex; justify-content: space-between">
+        <div>
+          <input type="number" id="timing" placeholder="Timing in Seconds" />
+          <button type="button" onclick="changeTiming()">Set Time</button>
+        </div>
+        <button type="button" onclick="toggleSlideshow()">Pause/Play</button>
+      </div>
+      <br />
+      <button type="button" onclick="prevSlide()">Prev</button>
+      <img
+        src=""
+        alt="Slideshow Image"
+        id="slide"
+        height="500px"
+        width="500px"
+      />
+      <button type="button" onclick="nextSlide()">Next</button>
+    </div>
+
+    <script src="slideshow.js"></script>
+  </body>
+</html>
